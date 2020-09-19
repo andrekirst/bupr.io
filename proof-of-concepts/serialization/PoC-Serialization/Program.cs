@@ -1,4 +1,5 @@
 ﻿using System;
+using PoC_Serialization.Model.ProcessdefinitionResearch;
 
 namespace PoC_Serialization
 {
@@ -6,7 +7,7 @@ namespace PoC_Serialization
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProcessdefinitionSerialization.DeserializePoC1File();
         }
     }
 }
