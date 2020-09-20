@@ -7,10 +7,6 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
     public class ApiVersion
     {
-        public ApiVersion()
-        {
-        }
-
         public ApiVersion(string value)
         {
             SetValues(value);

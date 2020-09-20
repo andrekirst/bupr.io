@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
@@ -18,5 +19,8 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 
         [JsonPropertyName("name")]
         public Name Name { get; set; }
+
+        [JsonPropertyName("statusList")]
+        public List<Status> StatusList { get; set; }
     }
 }

@@ -12,10 +12,6 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
         public string Value { get; }
         public static List<string> ValidKindValues = new List<string>{ "ProcessDefinition", "ProcessInstance" };
 
-        public Kind()
-        {
-        }
-
         public Kind(string value)
         {
             Guard.Against.NullOrWhiteSpace(value, nameof(value));
