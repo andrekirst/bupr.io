@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Ardalis.GuardClauses;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
@@ -17,11 +18,9 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 
         public Kind(string value)
         {
-            if (string.IsNullOrWhiteSpace(value))
-            {
-                throw new ArgumentException("Value can not be empty or whitespace", nameof(value));
-            }
+            Guard.Against.NullOrWhiteSpace(value, nameof(value));
 
+            // TODO -> GuardClause
             if (ValidKindValues.All(kind => kind != value))
             {
                 throw new ArgumentException("No valid kind value");
@@ -43,7 +42,7 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 
         public override void Write(Utf8JsonWriter writer, Kind value, JsonSerializerOptions options)
         {
-            writer.WriteStringValue(value);
+            writer.WriteStringValue(value.Value);
         }
     }
 }

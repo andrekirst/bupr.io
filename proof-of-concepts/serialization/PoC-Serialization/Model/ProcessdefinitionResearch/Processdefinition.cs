@@ -11,5 +11,12 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
         [JsonPropertyName("kind")]
         [JsonConverter(typeof(KindJsonConverter))]
         public Kind Kind { get; set; }
+
+        [JsonPropertyName("processdefinitionId")]
+        [JsonConverter(typeof(ProcessdefinitionIdJsonConverter))]
+        public ProcessdefinitionId ProcessdefinitionId { get; set; }
+
+        [JsonPropertyName("name")]
+        public Name Name { get; set; }
     }
 }

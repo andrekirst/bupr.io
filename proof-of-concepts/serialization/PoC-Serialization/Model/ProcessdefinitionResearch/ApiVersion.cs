@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text.Json;
+using Ardalis.GuardClauses;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
@@ -17,11 +18,9 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 
         private void SetValues(string value)
         {
-            if (string.IsNullOrWhiteSpace(value))
-            {
-                throw new ArgumentException("Value can not be empty or whitespace", nameof(value));
-            }
+            Guard.Against.NullOrWhiteSpace(value, nameof(value));
 
+            // TODO -> GuardClause
             if (value.Count(c => c == ':') > 1)
             {
                 throw new ArgumentException("Only one semilcolon allowed", nameof(value));
@@ -48,7 +47,7 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 
         public override void Write(Utf8JsonWriter writer, ApiVersion value, JsonSerializerOptions options)
         {
-            writer.WriteStringValue(value);
+            writer.WriteStringValue($"{value.Api}:{value.Version}");
         }
     }
 }

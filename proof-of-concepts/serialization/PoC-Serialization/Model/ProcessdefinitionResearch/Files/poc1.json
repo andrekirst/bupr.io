@@ -1,7 +1,7 @@
 {
     "apiVersion": "processdefinition:v1",
     "kind": "ProcessDefinition",
-    "processDefinitionId": "5eba8ed3-a13d-457f-9780-905459ef66e9",
+    "processdefinitionId": "5eba8ed3-a13d-457f-9780-905459ef66e9",
     "name": {
         "names": [
             { "language": "de", "value": "Prozessbeispiel #1" },
