@@ -21,6 +21,6 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
         public Name Name { get; set; }
 
         [JsonPropertyName("statusList")]
-        public List<Status> StatusList { get; set; }
+        public StatusList StatusList { get; set; }
     }
 }

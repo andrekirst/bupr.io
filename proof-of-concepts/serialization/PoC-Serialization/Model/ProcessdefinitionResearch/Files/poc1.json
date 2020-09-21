@@ -8,50 +8,70 @@
             { "language": "en", "value": "Processexample #1" }
         ]
     },
-    "statusList": [
-        {
-            "id": "d967e1cb-26ce-4fb5-a6ee-a39bb208a4ca",
-            "internalName": "red",
-            "name": {
-                "names": [ 
-                    { "language": "de", "value": "Rot" },
-                    { "language": "en", "value": "Red" }
-                ]
+  "statusList": {
+    "items": [
+      {
+        "id": "d967e1cb-26ce-4fb5-a6ee-a39bb208a4ca",
+        "internalName": "red",
+        "name": {
+          "names": [
+            {
+              "language": "de",
+              "value": "Rot"
             },
-            "type": "error",
-            "icon": {
-                "unicodeCharacter": "❌"
+            {
+              "language": "en",
+              "value": "Red"
             }
+          ]
         },
-        {
-            "id": "90b15eec-32e5-4d55-ae2f-d5a7147c0f73",
-            "internalName": "yellow",
-            "name": {
-                "names": [ 
-                    { "language": "de", "value": "Gelb" },
-                    { "language": "en", "value": "Yellow" }
-                ]
-            },
-            "type": "warning",
-            "icon": {
-                "unicodeCharacter": "⚠"
-            }
-        },
-        {
-            "id": "c75e31be-947d-4870-acb6-bd5e04f958f6",
-            "internalName": "green",
-            "name": {
-                "names": [ 
-                    { "language": "de", "value": "Grün" },
-                    { "language": "en", "value": "Green" }
-                ]
-            },
-            "type": "success",
-            "icon": {
-                "unicodeCharacter": "✅"
-            }
+        "type": "error",
+        "icon": {
+          "unicodeCharacter": "❌"
         }
-    ],
+      },
+      {
+        "id": "90b15eec-32e5-4d55-ae2f-d5a7147c0f73",
+        "internalName": "yellow",
+        "name": {
+          "names": [
+            {
+              "language": "de",
+              "value": "Gelb"
+            },
+            {
+              "language": "en",
+              "value": "Yellow"
+            }
+          ]
+        },
+        "type": "warning",
+        "icon": {
+          "unicodeCharacter": "⚠"
+        }
+      },
+      {
+        "id": "c75e31be-947d-4870-acb6-bd5e04f958f6",
+        "internalName": "green",
+        "name": {
+          "names": [
+            {
+              "language": "de",
+              "value": "Grün"
+            },
+            {
+              "language": "en",
+              "value": "Green"
+            }
+          ]
+        },
+        "type": "success",
+        "icon": {
+          "unicodeCharacter": "✅"
+        }
+      }
+    ]
+  },
     "isEnabled": true,
     "hierarchy": {
         "items": [
