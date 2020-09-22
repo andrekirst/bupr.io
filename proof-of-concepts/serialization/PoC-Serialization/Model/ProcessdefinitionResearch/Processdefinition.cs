@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿#nullable enable
 using System.Text.Json.Serialization;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
@@ -7,20 +7,20 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
     {
         [JsonPropertyName("apiVersion")]
         [JsonConverter(typeof(ApiVersionJsonConverter))]
-        public ApiVersion ApiVersion { get; set; }
+        public ApiVersion? ApiVersion { get; set; }
 
         [JsonPropertyName("kind")]
         [JsonConverter(typeof(KindJsonConverter))]
-        public Kind Kind { get; set; }
+        public Kind? Kind { get; set; }
 
         [JsonPropertyName("processdefinitionId")]
         [JsonConverter(typeof(ProcessdefinitionIdJsonConverter))]
-        public ProcessdefinitionId ProcessdefinitionId { get; set; }
+        public ProcessdefinitionId? ProcessdefinitionId { get; set; }
 
         [JsonPropertyName("name")]
-        public Name Name { get; set; }
+        public Name? Name { get; set; }
 
         [JsonPropertyName("statusList")]
-        public StatusList StatusList { get; set; }
+        public StatusList? StatusList { get; set; }
     }
 }

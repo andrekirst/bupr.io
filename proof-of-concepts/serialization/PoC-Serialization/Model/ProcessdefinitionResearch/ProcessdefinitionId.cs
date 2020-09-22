@@ -1,17 +1,15 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Ardalis.GuardClauses;
+using JetBrains.Annotations;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
     public class ProcessdefinitionId
     {
         public string Id { get; }
-
-        public ProcessdefinitionId()
-        {
-        }
 
         public ProcessdefinitionId(string id)
         {
@@ -37,14 +35,14 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
         public static explicit operator ProcessdefinitionId(string value) => new ProcessdefinitionId(value);
     }
 
-    public class ProcessdefinitionIdJsonConverter : JsonConverter<ProcessdefinitionId>
+    public class ProcessdefinitionIdJsonConverter : JsonConverter<ProcessdefinitionId?>
     {
-        public override ProcessdefinitionId Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override ProcessdefinitionId? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
             => typeToConvert == typeof(ProcessdefinitionId) ? new ProcessdefinitionId(reader.GetString()) : null;
 
-        public override void Write(Utf8JsonWriter writer, ProcessdefinitionId value, JsonSerializerOptions options)
+        public override void Write(Utf8JsonWriter writer, ProcessdefinitionId? value, JsonSerializerOptions options)
         {
-            writer.WriteStringValue(value.Id);
+            writer.WriteStringValue(value?.Id ?? string.Empty);
         }
     }
 }

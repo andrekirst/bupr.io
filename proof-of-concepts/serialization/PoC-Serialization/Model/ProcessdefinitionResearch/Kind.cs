@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
@@ -31,14 +32,14 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
         public static explicit operator Kind(string value) => new Kind(value);
     }
 
-    public class KindJsonConverter : JsonConverter<Kind>
+    public class KindJsonConverter : JsonConverter<Kind?>
     {
-        public override Kind Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override Kind? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
             => typeToConvert == typeof(Kind) ? new Kind(reader.GetString()) : null;
 
-        public override void Write(Utf8JsonWriter writer, Kind value, JsonSerializerOptions options)
+        public override void Write(Utf8JsonWriter writer, Kind? value, JsonSerializerOptions options)
         {
-            writer.WriteStringValue(value.Value);
+            writer.WriteStringValue(value?.Value ?? string.Empty);
         }
     }
 }
