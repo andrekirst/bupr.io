@@ -22,5 +22,11 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 
         [JsonPropertyName("statusList")]
         public StatusList? StatusList { get; set; }
+
+        [JsonPropertyName("isEnabled")]
+        public bool IsEnabled { get; set; } = true;
+
+        [JsonPropertyName("hierarchy")]
+        public Hierarchy? Hierarchy { get; set; }
     }
 }

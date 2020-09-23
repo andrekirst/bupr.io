@@ -1,13 +1,19 @@
 {
-    "apiVersion": "processdefinition:v1",
-    "kind": "ProcessDefinition",
-    "processdefinitionId": "5eba8ed3-a13d-457f-9780-905459ef66e9",
-    "name": {
-        "names": [
-            { "language": "de", "value": "Prozessbeispiel #1" },
-            { "language": "en", "value": "Processexample #1" }
-        ]
-    },
+  "apiVersion": "processdefinition:v1",
+  "kind": "ProcessDefinition",
+  "processdefinitionId": "5eba8ed3-a13d-457f-9780-905459ef66e9",
+  "name": {
+    "names": [
+      {
+        "language": "de",
+        "value": "Prozessbeispiel #1"
+      },
+      {
+        "language": "en",
+        "value": "Processexample #1"
+      }
+    ]
+  },
   "statusList": {
     "items": [
       {
@@ -27,7 +33,8 @@
         },
         "type": "error",
         "icon": {
-          "unicodeCharacter": "❌"
+          "type": "UnicodeCharacter",
+          "value": "⚠"
         }
       },
       {
@@ -47,7 +54,8 @@
         },
         "type": "warning",
         "icon": {
-          "unicodeCharacter": "⚠"
+          "type": "UnicodeCharacter",
+          "value": "⚠"
         }
       },
       {
@@ -67,98 +75,129 @@
         },
         "type": "success",
         "icon": {
-          "unicodeCharacter": "✅"
+          "type": "UnicodeCharacter",
+          "value": "⚠"
         }
       }
     ]
   },
-    "isEnabled": true,
-    "hierarchy": {
-        "items": [
+  "isEnabled": true,
+  "hierarchy": {
+    "items": [
+      {
+        "id": "fbd4105f-dc2e-4817-9909-9f774cb16f4f",
+        "name": {
+          "names": [
             {
-                "id": "fbd4105f-dc2e-4817-9909-9f774cb16f4f",
-                "name": {
-                    "names": [ 
-                        { "language": "de", "value": "Erfassung Personendaten" },
-                        { "language": "en", "value": "Collection of personal data" }
-                    ]
-                },
-                "items": [
-                    {
-                        "id": "bfb28b34-374f-42f9-98a5-3854dbe6b132",
-                        "name": {
-                            "names": [
-                                { "language": "de", "value": "Erforderliche Bewerber-Pflichtdaten erfasst" },
-                                { "language": "en", "value": "Required mandatory applicant data recorded" }
-                            ]
-                        },
-                        "level": 1,
-                        "sections": [
-                            {
-                                "id": "47459e11-d648-4bfd-9e47-426a49ffac1c",
-                                "name": {
-                                    "names": [
-                                        { "language": "de", "value": "Vorgangsdaten" },
-                                        { "language": "en", "value": "Transaction data" }
-                                    ]
-                                },
-                                "order": 0,
-                                "properties": [
-                                    {
-                                        "id": "a8c632bc-bffd-47e7-91a3-93e55bc1ae30",
-                                        "technicalName": "firstname-lastname",
-                                        "type": "label-text-text",
-                                        "values": [
-                                            {
-                                                "targetName": "label",
-                                                "nameValue": {
-                                                    "names": [
-                                                        { "language": "de", "value": "Vorname" },
-                                                        { "language": "en", "value": "First name" }
-                                                    ]
-                                                }
-                                            },
-                                            {
-                                                "targetName": "text1",
-                                                "variableName": "FirstName",
-                                                "rules": [
-                                                    {
-                                                        "targetStatus": "green",
-                                                        "validation": "[IsFilled]($$value)",
-                                                        "statusOnValidationFailure": "red"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "targetName": "text2",
-                                                "variableName": "LastName",
-                                                "rules": [
-                                                    {
-                                                        "targetStatus": "green",
-                                                        "validation": "[IsFilled]($$value)",
-                                                        "statusOnValidationFailure": "red"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                "level": 0
+              "language": "de",
+              "value": "Erfassung Personendaten"
             },
             {
-                "id": "4116f632-0eac-44c3-9739-66fe83c58297",
-                "name": {
-                    "names": [
-                        { "language": "de", "value": "Sachbearbeitung vor Test" },
-                        { "language": "en", "value": "Processing before test" }
-                    ]
-                },
-                "level": 0
+              "language": "en",
+              "value": "Collection of personal data"
             }
-        ]
-    }
+          ]
+        },
+        "items": [
+          {
+            "id": "bfb28b34-374f-42f9-98a5-3854dbe6b132",
+            "name": {
+              "names": [
+                {
+                  "language": "de",
+                  "value": "Erforderliche Bewerber-Pflichtdaten erfasst"
+                },
+                {
+                  "language": "en",
+                  "value": "Required mandatory applicant data recorded"
+                }
+              ]
+            },
+            "level": 1,
+            "sections": [
+              {
+                "id": "47459e11-d648-4bfd-9e47-426a49ffac1c",
+                "name": {
+                  "names": [
+                    {
+                      "language": "de",
+                      "value": "Vorgangsdaten"
+                    },
+                    {
+                      "language": "en",
+                      "value": "Transaction data"
+                    }
+                  ]
+                },
+                "order": 0,
+                "properties": [
+                  {
+                    "id": "a8c632bc-bffd-47e7-91a3-93e55bc1ae30",
+                    "technicalName": "firstname-lastname",
+                    "type": "label-text-text",
+                    "values": [
+                      {
+                        "targetName": "label",
+                        "nameValue": {
+                          "names": [
+                            {
+                              "language": "de",
+                              "value": "Vorname"
+                            },
+                            {
+                              "language": "en",
+                              "value": "First name"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "targetName": "text1",
+                        "variableName": "FirstName",
+                        "rules": [
+                          {
+                            "targetStatus": "green",
+                            "validation": "[IsFilled]($$value)",
+                            "statusOnValidationFailure": "red"
+                          }
+                        ]
+                      },
+                      {
+                        "targetName": "text2",
+                        "variableName": "LastName",
+                        "rules": [
+                          {
+                            "targetStatus": "green",
+                            "validation": "[IsFilled]($$value)",
+                            "statusOnValidationFailure": "red"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "level": 0
+      },
+      {
+        "id": "4116f632-0eac-44c3-9739-66fe83c58297",
+        "name": {
+          "names": [
+            {
+              "language": "de",
+              "value": "Sachbearbeitung vor Test"
+            },
+            {
+              "language": "en",
+              "value": "Processing before test"
+            }
+          ]
+        },
+        "level": 0
+      }
+    ]
+  }
 }

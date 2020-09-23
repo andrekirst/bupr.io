@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ApiVersion">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAIAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAhAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\ApiVersion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ApiVersionJsonConverter" Collapsed="true">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\ApiVersion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Kind" Collapsed="true">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEAAAAAAAAAAAAAABAAABgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Kind.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.KindJsonConverter" Collapsed="true">
+    <Position X="13.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Kind.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Name" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Name.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.LanguageName" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Name.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.LanguageKey" Collapsed="true">
+    <Position X="15.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Name.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.LanguageKeyJsonConverter">
+    <Position X="5.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Name.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Processdefinition" Collapsed="true">
+    <Position X="13.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAAAACAQAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Processdefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ProcessdefinitionId" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAAAEAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\ProcessdefinitionId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ProcessdefinitionIdJsonConverter" Collapsed="true">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\ProcessdefinitionId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusList" Collapsed="true">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Status" Collapsed="true">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAEAgAAAAQAAAAAAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.UnicodeCharacterIcon" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusType">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAEAAAAABAAAgAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusTypeJsonConverter" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusId" Collapsed="true">
+    <Position X="13.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusIdJsonConverter">
+    <Position X="9.75" Y="5.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PoC_Serialization.Model.ProcessdefinitionResearch.IIcon">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

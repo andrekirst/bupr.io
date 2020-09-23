@@ -1,9 +1,9 @@
 ﻿#nullable enable
+using Ardalis.GuardClauses;
 using System;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Ardalis.GuardClauses;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
@@ -31,7 +31,21 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
         [JsonConverter(typeof(StatusTypeJsonConverter))]
         public StatusType Type { get; set; } = StatusType.Error;
 
+        [JsonPropertyName("icon")]
+        public Icon? Icon { get; set; }
+
         public override string ToString() => $"{InternalName} ({Name})";
+    }
+
+    public class Icon
+    {
+        [JsonPropertyName("type")]
+        public string? Type { get; set; }
+
+        [JsonPropertyName("value")]
+        public string? Value { get; set; }
+
+        public override string ToString() => $"{Type} => {Value}";
     }
 
     public class StatusType
