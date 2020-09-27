@@ -1,138 +1,327 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ApiVersion">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="13" Y="13.5" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>IAAAIAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAhAAA=</HashCode>
       <FileName>Model\ProcessdefinitionResearch\ApiVersion.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ApiVersionJsonConverter" Collapsed="true">
-    <Position X="10.25" Y="0.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Hierarchy">
+    <Position X="12" Y="11.25" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\ApiVersion.cs</FileName>
+      <HashCode>AAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Hierarchy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.HierarchyItem">
+    <Position X="8.5" Y="11.25" Width="2.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACAAEAAAAAAQAAAAAAAABAEAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\HierarchyItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Id" />
+      <Property Name="Name" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+      <Property Name="Sections" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.HierarchyItemId">
+    <Position X="8.5" Y="14" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\HierarchyItemId.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Kind" Collapsed="true">
-    <Position X="12" Y="0.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Icon">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Icon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Kind">
+    <Position X="19.5" Y="10.5" Width="2.75" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAAAIAAAAAAAAAAEAAAAAAAAAAAAAABAAABgAAAAAAA=</HashCode>
       <FileName>Model\ProcessdefinitionResearch\Kind.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.KindJsonConverter" Collapsed="true">
-    <Position X="13.75" Y="0.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.LanguageKey">
+    <Position X="15.5" Y="1" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Kind.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\LanguageKey.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Name" Collapsed="true">
-    <Position X="12" Y="1.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.LanguageName">
+    <Position X="11.5" Y="5.25" Width="2.75" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\LanguageName.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Language" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Name">
+    <Position X="11.25" Y="9.25" Width="3.25" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\ProcessdefinitionResearch\Name.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Names" />
+    </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.LanguageName" Collapsed="true">
-    <Position X="10.25" Y="1.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Processdefinition">
+    <Position X="15" Y="11.25" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Name.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.LanguageKey" Collapsed="true">
-    <Position X="15.5" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Name.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.LanguageKeyJsonConverter">
-    <Position X="5.5" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Name.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Processdefinition" Collapsed="true">
-    <Position X="13.75" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAABAAAAEAAAACAQAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <HashCode>AAAAAAAAAABAAAAEAAEACAQAAAAAAAAAAAAgAAAAEAA=</HashCode>
       <FileName>Model\ProcessdefinitionResearch\Processdefinition.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ApiVersion" />
+      <Property Name="Hierarchy" />
+      <Property Name="Kind" />
+      <Property Name="Name" />
+      <Property Name="ProcessdefinitionId" />
+      <Property Name="StatusList" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ProcessdefinitionId" Collapsed="true">
-    <Position X="15.5" Y="1.75" Width="1.5" />
+    <Position X="16" Y="13.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACIAAAAAAAAAAEAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Model\ProcessdefinitionResearch\ProcessdefinitionId.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ProcessdefinitionIdJsonConverter" Collapsed="true">
-    <Position X="8.5" Y="2.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Property">
+    <Position X="4.25" Y="9.25" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\ProcessdefinitionId.cs</FileName>
+      <HashCode>AAACAAAAAAAAAAAEAAIAAAAAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Property.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Id" />
+      <Property Name="TechnicalName" />
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Values" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.PropertyId">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\PropertyId.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusList" Collapsed="true">
-    <Position X="8.5" Y="3.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.PropertyType">
+    <Position X="1" Y="8.75" Width="2.25" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\PropertyType.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Status" Collapsed="true">
-    <Position X="12" Y="2.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.PropertyValue">
+    <Position X="9.5" Y="7.25" Width="2.75" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAAEAAEAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\PropertyValue.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NameValue" />
+      <Property Name="TargetName" />
+      <Property Name="VariableName" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Rules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Rule">
+    <Position X="4.75" Y="7.25" Width="3" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAKAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Rule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="StatusOnValidationFailure" />
+      <Property Name="TargetStatus" />
+      <Property Name="Validation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Section">
+    <Position X="7" Y="9.25" Width="2.75" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Section.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Id" />
+      <Property Name="Name" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Properties" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.SectionId">
+    <Position X="6" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\SectionId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Status">
+    <Position X="13.75" Y="7.25" Width="2.25" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAAAAAAIAAAAAAAEAgAAAAQAAAAAAAAAAQAAAAEAAAA=</HashCode>
       <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Icon" />
+      <Property Name="Name" />
+      <Property Name="StatusId" />
+      <Property Name="Type" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.UnicodeCharacterIcon" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusType">
-    <Position X="2.5" Y="4.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAQAEAAAAABAAAgAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusTypeJsonConverter" Collapsed="true">
-    <Position X="12" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusId" Collapsed="true">
-    <Position X="13.75" Y="2.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusId">
+    <Position X="17.5" Y="7" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+      <FileName>Model\ProcessdefinitionResearch\StatusId.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusIdJsonConverter">
-    <Position X="9.75" Y="5.75" Width="2.75" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusIdentification">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\StatusIdentification.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="PoC_Serialization.Model.ProcessdefinitionResearch.IIcon">
-    <Position X="0.5" Y="4.75" Width="1.5" />
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusList">
+    <Position X="16" Y="9.25" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
+      <HashCode>AAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\StatusList.cs</FileName>
     </TypeIdentifier>
-  </Interface>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusType">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAEAAAAABAAAgAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\StatusType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.TargetName">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\TargetName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.TechnicalName">
+    <Position X="4.25" Y="12" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\TechnicalName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Validation">
+    <Position X="3.5" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\Validation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.VariableName" Collapsed="true">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ProcessdefinitionResearch\VariableName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
