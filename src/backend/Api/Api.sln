@@ -9,7 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{B143
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{A07A554C-9CD3-4101-94DD-CC05BE41802F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Libraries.Serialization.Processdefinition", "Api.Libraries.Serialization.Processdefinition\Api.Libraries.Serialization.Processdefinition.csproj", "{72AC0836-F3ED-457F-9A6F-D0CD60DB4B0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Libraries.Serialization.Processdefinition", "Api.Libraries.Serialization.Processdefinition\Api.Libraries.Serialization.Processdefinition.csproj", "{72AC0836-F3ED-457F-9A6F-D0CD60DB4B0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{92A91C4B-FEEC-4467-B244-F4DF5E53F6A6}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
