@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{BF7CF0F2-F824-4A7E-B078-455265C6CE99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{B14331A4-2A14-4054-B098-B9F34BF4282A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{A07A554C-9CD3-4101-94DD-CC05BE41802F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Libraries.Serialization.Processdefinition", "Api.Libraries.Serialization.Processdefinition\Api.Libraries.Serialization.Processdefinition.csproj", "{72AC0836-F3ED-457F-9A6F-D0CD60DB4B0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72AC0836-F3ED-457F-9A6F-D0CD60DB4B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AC0836-F3ED-457F-9A6F-D0CD60DB4B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AC0836-F3ED-457F-9A6F-D0CD60DB4B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AC0836-F3ED-457F-9A6F-D0CD60DB4B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A07A554C-9CD3-4101-94DD-CC05BE41802F} = {BF7CF0F2-F824-4A7E-B078-455265C6CE99}
+		{72AC0836-F3ED-457F-9A6F-D0CD60DB4B0E} = {A07A554C-9CD3-4101-94DD-CC05BE41802F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBE6724E-417C-4AB7-9D52-70A3F95176A6}
+	EndGlobalSection
+EndGlobal
