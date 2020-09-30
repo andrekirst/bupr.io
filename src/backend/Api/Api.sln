@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Libraries.Extensions.Gu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Libraries.Extensions.Guard.Tests", "Api.Libraries.Extensions.Guard.Tests\Api.Libraries.Extensions.Guard.Tests.csproj", "{A85F1B5D-1EAA-4CF2-9A0D-FC9FC7DAF836}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Hosting.WebApi", "Api.Hosting.WebApi\Api.Hosting.WebApi.csproj", "{D9C7F4B0-C3FC-44B4-9439-31A01381FEAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{A85F1B5D-1EAA-4CF2-9A0D-FC9FC7DAF836}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A85F1B5D-1EAA-4CF2-9A0D-FC9FC7DAF836}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A85F1B5D-1EAA-4CF2-9A0D-FC9FC7DAF836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C7F4B0-C3FC-44B4-9439-31A01381FEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C7F4B0-C3FC-44B4-9439-31A01381FEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C7F4B0-C3FC-44B4-9439-31A01381FEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C7F4B0-C3FC-44B4-9439-31A01381FEAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{909A6389-41B0-4C35-8C43-77B424979FF6} = {BF7CF0F2-F824-4A7E-B078-455265C6CE99}
 		{D0643044-B9B9-43B8-BC6E-3DEBD28CE6C0} = {909A6389-41B0-4C35-8C43-77B424979FF6}
 		{A85F1B5D-1EAA-4CF2-9A0D-FC9FC7DAF836} = {909A6389-41B0-4C35-8C43-77B424979FF6}
+		{D9C7F4B0-C3FC-44B4-9439-31A01381FEAE} = {B14331A4-2A14-4054-B098-B9F34BF4282A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBE6724E-417C-4AB7-9D52-70A3F95176A6}
