@@ -9,8 +9,4 @@
     <PackageReference Include="Ardalis.GuardClauses" Version="3.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Api.Libraries.Extensions.Guard\Api.Libraries.Extensions.Guard.csproj" />
-  </ItemGroup>
-
 </Project>
