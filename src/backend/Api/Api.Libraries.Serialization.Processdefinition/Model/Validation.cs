@@ -1,4 +1,6 @@
-﻿namespace Api.Libraries.Serialization.Processdefinition.Model
+﻿using Ardalis.GuardClauses;
+
+namespace Api.Libraries.Serialization.Processdefinition.Model
 {
     public class Validation
     {
@@ -6,9 +8,9 @@
 
         public Validation(string value)
         {
-            //Guard.Against.NullOrWhiteSpace(value, nameof(value));
-            //Value = value;
-        }
+			Guard.Against.NullOrWhiteSpace(value, nameof(value));
+			Value = value;
+		}
 
         public override string ToString() => Value;
     }

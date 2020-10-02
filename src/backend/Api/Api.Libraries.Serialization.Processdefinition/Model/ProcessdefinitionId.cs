@@ -1,4 +1,5 @@
 ﻿using System;
+using Ardalis.GuardClauses;
 
 namespace Api.Libraries.Serialization.Processdefinition.Model
 {
@@ -8,22 +9,22 @@ namespace Api.Libraries.Serialization.Processdefinition.Model
 
         public ProcessdefinitionId(string id)
         {
-            //Guard.Against.Null(id, nameof(id));
+			Guard.Against.Null(id, nameof(id));
 
-            //if (!IsValidIdStructure(id))
-            //{
-            //    throw new ArgumentException("Id is not in a valid structure", nameof(id));
-            //}
+			if (!IsValidIdStructure(id))
+			{
+				throw new ArgumentException("Id is not in a valid structure", nameof(id));
+			}
 
-            //Id = id;
-        }
+			Id = id;
+		}
 
-        //public static bool IsValidIdStructure(string id)
-        //{
-        //    // TODO Bessere Implementierung
-        //    return Guid.TryParse(id, out _);
-        //}
+		public static bool IsValidIdStructure(string id)
+		{
+			// TODO Bessere Implementierung
+			return Guid.TryParse(id, out _);
+		}
 
-        public override string ToString() => Id;
+		public override string ToString() => Id;
     }
 }

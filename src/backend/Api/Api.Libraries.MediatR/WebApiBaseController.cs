@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Api.Libraries.MediatR.Results;
+using Api.Libraries.Infrastructure.MediatR.Results;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using BadRequestObjectResult = Api.Libraries.MediatR.Results.BadRequestObjectResult;
-using BadRequestResult = Api.Libraries.MediatR.Results.BadRequestResult;
-using CreatedAtActionResult = Api.Libraries.MediatR.Results.CreatedAtActionResult;
-using NoContentResult = Api.Libraries.MediatR.Results.NoContentResult;
-using NotFoundObjectResult = Api.Libraries.MediatR.Results.NotFoundObjectResult;
-using NotFoundResult = Api.Libraries.MediatR.Results.NotFoundResult;
-using OkObjectResult = Api.Libraries.MediatR.Results.OkObjectResult;
-using OkResult = Api.Libraries.MediatR.Results.OkResult;
-using UnauthorizedResult = Api.Libraries.MediatR.Results.UnauthorizedResult;
+using BadRequestObjectResult = Api.Libraries.Infrastructure.MediatR.Results.BadRequestObjectResult;
+using BadRequestResult = Api.Libraries.Infrastructure.MediatR.Results.BadRequestResult;
+using CreatedAtActionResult = Api.Libraries.Infrastructure.MediatR.Results.CreatedAtActionResult;
+using NoContentResult = Api.Libraries.Infrastructure.MediatR.Results.NoContentResult;
+using NotFoundObjectResult = Api.Libraries.Infrastructure.MediatR.Results.NotFoundObjectResult;
+using NotFoundResult = Api.Libraries.Infrastructure.MediatR.Results.NotFoundResult;
+using OkObjectResult = Api.Libraries.Infrastructure.MediatR.Results.OkObjectResult;
+using OkResult = Api.Libraries.Infrastructure.MediatR.Results.OkResult;
+using UnauthorizedResult = Api.Libraries.Infrastructure.MediatR.Results.UnauthorizedResult;
 
-namespace Api.Libraries.MediatR
+namespace Api.Libraries.Infrastructure.MediatR
 {
 	public class WebApiBaseController : ControllerBase
 	{

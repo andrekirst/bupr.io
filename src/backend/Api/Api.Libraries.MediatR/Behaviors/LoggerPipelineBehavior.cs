@@ -7,7 +7,7 @@ using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Api.Libraries.MediatR.Behaviors
+namespace Api.Libraries.Infrastructure.MediatR.Behaviors
 {
 	public class LoggerPipelineBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
 		where TRequest : notnull

@@ -8,9 +8,9 @@ namespace Api.Libraries.Serialization.Processdefinition.Model
 
         public VariableName(string name)
         {
-            //Guard.Against.NullOrWhiteSpace(name, nameof(name));
-            //Name = name;
-        }
+			Guard.Against.NullOrWhiteSpace(name, nameof(name));
+			Name = name;
+		}
 
         public override string ToString() => Name;
     }

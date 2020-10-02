@@ -2,19 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ardalis.GuardClauses" Version="3.0.0" />
     <PackageReference Include="SonarAnalyzer.CSharp" Version="8.13.1.21947">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Api.Libraries.Extensions.Guard\Api.Libraries.Extensions.Guard.csproj" />
   </ItemGroup>
 
 </Project>

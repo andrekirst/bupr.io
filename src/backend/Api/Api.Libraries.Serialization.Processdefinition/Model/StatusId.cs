@@ -1,13 +1,15 @@
-﻿namespace Api.Libraries.Serialization.Processdefinition.Model
+﻿using Ardalis.GuardClauses;
+
+namespace Api.Libraries.Serialization.Processdefinition.Model
 {
     public class StatusId
     {
         public StatusId(string id)
         {
-            //Guard.Against.NullOrWhiteSpace(id, nameof(id));
+			Guard.Against.NullOrWhiteSpace(id, nameof(id));
 
-            //Id = id;
-        }
+			Id = id;
+		}
 
         public string Id { get; }
 

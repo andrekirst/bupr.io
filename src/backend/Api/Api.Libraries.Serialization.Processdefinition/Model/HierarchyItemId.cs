@@ -1,4 +1,6 @@
-﻿namespace Api.Libraries.Serialization.Processdefinition.Model
+﻿using Ardalis.GuardClauses;
+
+namespace Api.Libraries.Serialization.Processdefinition.Model
 {
     public class HierarchyItemId
     {
@@ -6,9 +8,9 @@
 
         public HierarchyItemId(string id)
         {
-            //Guard.Against.NullOrWhiteSpace(id, nameof(id));
-            //Id = id;
-        }
+			Guard.Against.NullOrWhiteSpace(id, nameof(id));
+			Id = id;
+		}
 
         public override string ToString() => Id;
     }

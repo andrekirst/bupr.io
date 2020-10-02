@@ -5,7 +5,7 @@ using Ardalis.GuardClauses;
 using Autofac.Core;
 using Autofac.Features.Variance;
 
-namespace Api.Libraries.MediatR
+namespace Api.Libraries.Infrastructure.MediatR
 {
 	public class ScopedContravariantRegistrationSource : IRegistrationSource
 	{

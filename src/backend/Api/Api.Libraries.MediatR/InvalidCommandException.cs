@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Api.Libraries.MediatR
+namespace Api.Libraries.Infrastructure.MediatR
 {
 	[Serializable]
 	public class InvalidCommandException : Exception
 	{
-
 		public InvalidCommandException()
 		{
 		}

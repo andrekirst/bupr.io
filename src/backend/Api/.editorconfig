@@ -9,3 +9,6 @@ dotnet_sort_system_directives_first = true
 end_of_line = crlf
 insert_final_newline = true
 file_header_template = Copyright © André Kirst. All Rights Reserved.\Licensed under MIT
+
+# S4136: Method overloads should be grouped together
+dotnet_diagnostic.S4136.severity = silent

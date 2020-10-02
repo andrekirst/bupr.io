@@ -1,4 +1,4 @@
-﻿namespace Api.Libraries.MediatR.Results
+﻿namespace Api.Libraries.Infrastructure.MediatR.Results
 {
 	public class BadRequestResult : IRequestResult
 	{
