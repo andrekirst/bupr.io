@@ -1,4 +1,5 @@
-﻿using Ardalis.GuardClauses;
+﻿using Api.Libraries.Extensions.Guard;
+using Ardalis.GuardClauses;
 
 namespace Api.Libraries.Serialization.Processdefinition.Model
 {
@@ -9,8 +10,7 @@ namespace Api.Libraries.Serialization.Processdefinition.Model
         public TechnicalName(string name)
         {
 			Guard.Against.NullOrWhiteSpace(name, nameof(name));
-			// TODO implementieren
-			//Guard.Against.NotMatchRegex(name, nameof(name), @"^[a-zA-Z\-]{1,}$");
+			Guard.Against.NotMatchRegex(name, nameof(name), @"^[a-zA-Z\-]{1,}$");
 			Name = name;
 		}
 
