@@ -28,5 +28,8 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 
         public static implicit operator string(Kind kind) => kind.ToString();
         public static explicit operator Kind(string value) => new Kind(value);
+
+        public static Kind ProcessDefinition => new Kind("ProcessDefinition");
+        public static Kind ProcessInstance => new Kind("ProcessInstance");
     }
 }

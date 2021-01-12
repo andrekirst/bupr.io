@@ -18,5 +18,7 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
         public static StatusType Error = new StatusType("error");
         public static StatusType Warning = new StatusType("warning");
         public static StatusType Success = new StatusType("success");
+        public static StatusType NotSet = new StatusType("not_set");
+        public static StatusType Default => NotSet;
     }
 }

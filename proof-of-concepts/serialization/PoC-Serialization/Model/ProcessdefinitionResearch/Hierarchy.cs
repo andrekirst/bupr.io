@@ -6,9 +6,9 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
     public class Hierarchy
     {
-        [JsonPropertyName("items")]
-        public List<HierarchyItem> Items { get; set; } = new List<HierarchyItem>();
+        [JsonPropertyName("hierarchies")]
+        public List<HierarchyItem> Hierarchies { get; set; } = new List<HierarchyItem>();
 
-        public override string ToString() => $"Count = {Items.Count}";
+        public override string ToString() => $"Count = {Hierarchies?.Count}";
     }
 }

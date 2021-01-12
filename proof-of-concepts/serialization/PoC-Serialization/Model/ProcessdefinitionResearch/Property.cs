@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
-using PoC_Serialization.Model.ProcessdefinitionResearch.JsonConverters;
+﻿using System.Text.Json.Serialization;
+using PoC_Serialization.Model.Ids;
+using PoC_Serialization.Model.JsonConverters;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
@@ -8,19 +8,18 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
     {
         [JsonPropertyName("id")]
         [JsonConverter(typeof(PropertyIdJsonConverter))]
-        public PropertyId? Id { get; set; }
+        public PropertyId Id { get; set; } = new PropertyId();
 
         [JsonPropertyName("technicalName")]
         [JsonConverter(typeof(TechnicalNameJsonConverter))]
         public TechnicalName? TechnicalName { get; set; }
 
-        [JsonPropertyName("type")]
-        [JsonConverter(typeof(PropertyTypeJsonConverter))]
-        public PropertyType? Type { get; set; }
-
         [JsonPropertyName("values")]
-        public List<PropertyValue> Values { get; set; } = new List<PropertyValue>();
+        public PropertyValue? Value { get; set; }
 
-        public override string ToString() => $"{Id} - {TechnicalName} - {Type} - Values: {Values.Count}";
+        [JsonPropertyName("defaultStatus")]
+        public StatusIdentification DefaultStatus { get; set; } = "red";
+
+        public override string ToString() => $"{Id} - {TechnicalName}";
     }
 }

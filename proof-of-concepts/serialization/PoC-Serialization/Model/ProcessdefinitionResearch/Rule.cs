@@ -1,5 +1,6 @@
 ﻿using System.Text.Json.Serialization;
-using PoC_Serialization.Model.ProcessdefinitionResearch.JsonConverters;
+using PoC_Serialization.Model.JsonConverters;
+using PoC_Serialization.Model.ProcessdefinitionResearch.Validations;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
@@ -7,16 +8,18 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
     {
         [JsonPropertyName("targetStatus")]
         [JsonConverter(typeof(StatusIdentificationJsonConverter))]
-        public StatusIdentification? TargetStatus { get; set; }
+        public StatusIdentification TargetStatus { get; set; }
 
-        [JsonPropertyName("validation")]
-        [JsonConverter(typeof(ValidationJsonConverter))]
-        public Validation? Validation { get; set; }
+        [JsonPropertyName("validationOptions")]
+        public ValidationOptions? ValidationOptions { get; set; }
+
+        [JsonPropertyName("order")]
+        public int Order { get; set; } = 1;
 
         [JsonPropertyName("statusOnValidationFailure")]
         [JsonConverter(typeof(StatusIdentificationJsonConverter))]
-        public StatusIdentification? StatusOnValidationFailure { get; set; }
+        public StatusIdentification StatusOnValidationFailure { get; set; }
 
-        public override string ToString() => $"{TargetStatus} ({Validation}) -> OnFailure: {StatusOnValidationFailure}";
+        public override string ToString() => $"{TargetStatus} ({ValidationOptions?.ValidationTypeName}) -> OnFailure: {StatusOnValidationFailure}";
     }
 }

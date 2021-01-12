@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using PoC_Serialization.Model.ProcessdefinitionResearch.JsonConverters;
+using PoC_Serialization.Model.JsonConverters;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {
@@ -18,8 +18,11 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
         public VariableName? VariableName { get; set; }
 
         [JsonPropertyName("rules")]
-        public List<Rule> Rules { get; set; } = new List<Rule>();
+        public List<Rule>? Rules { get; set; }
+        
+        [JsonPropertyName("variableType")]
+        public VariableType? VariableType { get; set; }
 
-        public override string ToString() => $"{TargetName} - Rules: {Rules.Count}";
+        public override string ToString() => $"{TargetName} - Rules: {Rules?.Count}";
     }
 }

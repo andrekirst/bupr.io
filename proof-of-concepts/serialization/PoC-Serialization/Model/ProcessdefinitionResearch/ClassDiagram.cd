@@ -115,11 +115,11 @@
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ApiVersion" />
-      <Property Name="Hierarchy" />
       <Property Name="Kind" />
-      <Property Name="Name" />
       <Property Name="ProcessdefinitionId" />
+      <Property Name="Name" />
       <Property Name="StatusList" />
+      <Property Name="Hierarchy" />
     </ShowAsAssociation>
   </Class>
   <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.ProcessdefinitionId" Collapsed="true">
@@ -177,8 +177,8 @@
       <FileName>Model\ProcessdefinitionResearch\PropertyValue.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="NameValue" />
       <Property Name="TargetName" />
+      <Property Name="NameValue" />
       <Property Name="VariableName" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
@@ -195,9 +195,9 @@
       <FileName>Model\ProcessdefinitionResearch\Rule.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="StatusOnValidationFailure" />
       <Property Name="TargetStatus" />
       <Property Name="Validation" />
+      <Property Name="StatusOnValidationFailure" />
     </ShowAsAssociation>
   </Class>
   <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.Section">
@@ -218,7 +218,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.SectionId">
-    <Position X="6" Y="5" Width="1.5" />
+    <Position X="6" Y="11" Width="1.5" />
     <Members>
       <Method Name="ToString" Hidden="true" />
     </Members>
@@ -237,10 +237,10 @@
       <FileName>Model\ProcessdefinitionResearch\Status.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Icon" />
-      <Property Name="Name" />
       <Property Name="StatusId" />
+      <Property Name="Name" />
       <Property Name="Type" />
+      <Property Name="Icon" />
     </ShowAsAssociation>
   </Class>
   <Class Name="PoC_Serialization.Model.ProcessdefinitionResearch.StatusId">

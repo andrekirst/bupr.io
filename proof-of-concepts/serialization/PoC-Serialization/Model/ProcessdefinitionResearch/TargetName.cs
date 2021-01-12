@@ -12,6 +12,8 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
             Name = name;
         }
 
+        public static implicit operator TargetName(string name) => new TargetName(name);
+
         public override string ToString() => Name;
     }
 }

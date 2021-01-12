@@ -12,6 +12,8 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
             Value = value;
         }
 
+        public static implicit operator StatusIdentification(string value) => new StatusIdentification(value);
+        
         public override string ToString() => Value;
     }
 }

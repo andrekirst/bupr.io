@@ -1,6 +1,7 @@
 ﻿#nullable enable
 using System.Text.Json.Serialization;
-using PoC_Serialization.Model.ProcessdefinitionResearch.JsonConverters;
+using PoC_Serialization.Model.Ids;
+using PoC_Serialization.Model.JsonConverters;
 
 namespace PoC_Serialization.Model.ProcessdefinitionResearch
 {

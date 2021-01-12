@@ -13,6 +13,8 @@ namespace PoC_Serialization.Model.ProcessdefinitionResearch
             Name = name;
         }
 
+        public static implicit operator TechnicalName(string name) => new TechnicalName(name);
+
         public override string ToString() => Name;
     }
 }
